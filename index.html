@@ -5017,16 +5017,14 @@ const GHFeatures = (() => {
   };
 })();
 
+  <!-- உங்கள் மற்ற website code -->
 
-</script>
-  if ('serviceWorker' in navigator) {
+    <script>
+    if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./sw.js')
           .then(() => console.log('Cropzo Service Worker registered'))
-          .catch((error) => console.error(
-            'Cropzo Service Worker registration failed:',
-            error
-          ));
+          .catch((error) => console.error('Cropzo Service Worker registration failed:', error));
       });
     }
     </script>
